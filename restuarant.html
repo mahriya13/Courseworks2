@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+h1{text-align:center;
+font-size: 40px;
+margin:70px;}
+p {  text-align: center;
+font-size:35px;
+margin:50px;}
+.button {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:#e6755e;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: black;
+  border: 2px solid #000000;
+}
+
+.button:hover {
+  background-color: white;
+  border:white;
+
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height:960px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.parent {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .image1 {
+      position: relative;
+      top: 0;
+      left: 0;
+      border: 1px solid #000000;
+    }
+    .image2 {
+      position: absolute;
+      top: 325px;
+      left: 10px;
+      border: 1px solid #000000;
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <ul>
+  <li><a href="file:///C:/Users/mahri/OneDrive/Documents/IN0006/coursework2/home.html">Home</a></li>
+  <li><a href="file:///C:/Users/mahri/OneDrive/Documents/IN0006/coursework2/restuarant.html">Resturant</a></li>
+  <li><a href="file:///C:/Users/mahri/OneDrive/Documents/IN0006/coursework2/contact.html">Contact US</a></li>
+
+</ul>
+
+<div class="row">
+  <div class="column" style="background-color:#e6755e">
+    <h1>RESTUARANT</h1>
+    <p>The restaurant serves high-quality ingredients from around the British Isles and Italy.
+    Seasonal produce such as scallops form Orkney, Hebridean lamb and turbot from Cornwall.
+    It is food that observes the established traditions of Italian cooking,
+    but breaks the rules a little.</p>
+    <button class="button">BOOK A  TABLE</button>
+  </div>
+  <div class="column">
+    <div class="parent">
+       <img class="image1" src="https://luca.restaurant/wp-content/uploads/RESTAURANT_6_044-1-1400x933.jpg" />
+       <img class="image2" src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/heading-restaurant.svg" />
+     </div>
+  </div>
+</div>
+<footer>
+  <span>ltd</span>
+  <a href="https://www.iubenda.com/privacy-policy/98574711">Privacy Policy</a>
+</footer>
+
+
+
+</html>
